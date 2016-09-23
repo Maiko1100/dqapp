@@ -18,7 +18,7 @@
                                 'files' => true)) !!}
                                 <div class="form-group">
                                 {!! Form::label('Adressenbestand') !!}
-                                {!! Form::file('file', array('class' => 'filestyle')) !!}
+                                {!! Form::file('file', array('class' => 'filestyle','multiple' => '')) !!}
                                 </div>
 
                             <div class="form-group">

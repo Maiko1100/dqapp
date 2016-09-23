@@ -19,12 +19,15 @@ class adresController extends Controller
      */
      public function __construct()
     {
+
         $this->middleware('auth');
+        
     }
 
 
     public function index()
     {
+       
         return view('adres/index');
     }
 
@@ -71,15 +74,10 @@ class adresController extends Controller
                         ['straat' => $value["2"], 'huisnummer' => $value["3"],'toevoeging' => $value["4"],'postcode' => $value["5"],'stad' => $value["6"],'naam' => utf8_encode($value["8"])],
                         
 ]);
-                    // print_r($value["2"] . $value["3"]. $value["4"]. $value["5"]. $value["6"]. $value["8"]);
-                    // print_r("</br>");
                 }
 
             }
-
-       
         fclose($file);
-
 
     return view('adres/upload');
     }
@@ -92,7 +90,30 @@ class adresController extends Controller
      */
     public function show($id)
     {
-        //
+
+    }
+    public function search(Request $request)
+    {
+         $postcode = $request->input('postcode');
+         $huisnummer = $request->input('huisnummer');
+
+        if ($request->isMethod('post')) {
+
+            $adresses = DB::table('adres')->where([
+            ['postcode', '=', $postcode],
+            ['huisnummer', '=',  $huisnummer],
+            ])->get();
+           
+            
+        }
+
+
+        $adressen =  $this->assignAdresses($adresses);
+        //var_dump($adresses2);
+
+       return view('adres/index')->withAdressen($adressen);
+        
+        
     }
 
     /**
@@ -118,6 +139,35 @@ class adresController extends Controller
         //
     }
 
+    public function assignAdresses($aAdresses)
+    {
+
+        $aAdressesData = array();
+
+        if ($aAdresses)
+        {
+            foreach ($aAdresses as $oAddres)
+            {
+
+
+
+                $aAdressesData[] = array
+                    (
+                     'id' => $oAddres->id,
+                    'straat' => $oAddres->straat,
+                    'huisnummer' => $oAddres->huisnummer,
+                    'toevoeging' => $oAddres->toevoeging,
+                    'postcode' => $oAddres->postcode,
+                    'stad' => $oAddres->stad,
+                    'naam' => $oAddres->naam
+                );
+            }
+        }
+
+
+        return $aAdressesData;
+    }
+
     /**
      * Remove the specified resource from storage.
      *
@@ -125,6 +175,24 @@ class adresController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
+    {
+        //
+    }
+
+    public function brief(Request $request)
+    {
+         $datum = $request->input('datum');
+         $afspraak = $request->input('afspraak');
+         $tijd = $request->input('tijd');
+         $id = $request->input('id');
+         var_dump($id);
+         var_dump($datum);
+         var_dump($afspraak);
+         var_dump($tijd);
+
+    }
+
+    public function mail(Request $request)
     {
         //
     }

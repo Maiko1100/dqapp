@@ -5,6 +5,8 @@
     "dev": "gulp watch"
   },
   "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.15.0",
     "bootstrap-sass": "^3.3.7",
     "gulp": "^3.9.1",
     "jquery": "^3.1.0",
@@ -16,6 +18,16 @@
     "vue-resource": "^0.9.3"
   },
   "dependencies": {
-     "bootstrap-filestyle": "^1.2.1"
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-runtime": "^6.11.6",
+    "bootstrap-filestyle": "^1.2.1",
+    "buble": "^0.13.2",
+    "buble-loader": "^0.3.0",
+    "css-loader": "^0.25.0",
+    "vue-hot-reload-api": "^1.3.3",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.5.2",
+    "vue-style-loader": "^1.0.0"
   }
 }
