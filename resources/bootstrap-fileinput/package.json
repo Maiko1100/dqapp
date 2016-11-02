@@ -1,0 +1,63 @@
+{
+  "name": "bootstrap-fileinput",
+  "version": "4.3.4",
+  "homepage": "https://github.com/kartik-v/bootstrap-fileinput",
+  "authors": [
+    "Kartik Visweswaran <kartikv2@gmail.com>"
+  ],
+  "description": "An enhanced HTML 5 file input for Bootstrap 3.x with file preview, multiple selection, ajax uploads, and more features.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartik-v/bootstrap-fileinput.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kartik-v/bootstrap-fileinput/issues"
+  },
+  "keywords": [
+    "bootstrap",
+    "file",
+    "input",
+    "preview",
+    "image",
+    "upload",
+    "ajax",
+    "multiple",
+    "delete",
+    "progress",
+    "gallery"
+  ],
+  "main": "./js/fileinput.js",
+  "style": "./css/fileinput.css",
+  "peerDependencies": {
+    "jquery": ">= 1.9.0",
+    "bootstrap": "~3"
+  },
+  "license": "BSD-3-Clause",
+  "gitHead": "abde5a9611d4939b951fdd00f70a9fec935c7b6b",
+  "_id": "bootstrap-fileinput@4.3.4",
+  "scripts": {},
+  "_shasum": "203c9344dfe4695d45aa56815ef53816dbe9e09f",
+  "_from": "bootstrap-fileinput@latest",
+  "_npmVersion": "3.3.10",
+  "_nodeVersion": "4.2.1",
+  "_npmUser": {
+    "name": "kartik-v",
+    "email": "feedback@krajee.com"
+  },
+  "dist": {
+    "shasum": "203c9344dfe4695d45aa56815ef53816dbe9e09f",
+    "tarball": "https://registry.npmjs.org/bootstrap-fileinput/-/bootstrap-fileinput-4.3.4.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "kartik-v",
+      "email": "feedback@krajee.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/bootstrap-fileinput-4.3.4.tgz_1470556313164_0.18297634762711823"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/bootstrap-fileinput/-/bootstrap-fileinput-4.3.4.tgz"
+}
