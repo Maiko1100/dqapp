@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('content')
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
-
     <script type="text/javascript" src="{{ asset('assets/js/adres/adres.js') }}"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/adres/adres.css') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
@@ -31,6 +30,7 @@
                     <div class="panel-body">
 
 
+                        <form method="POST" action="{{ url('adres/search') }}" accept-charset="UTF-8">
                         <form method="POST" action="{{ url('adres/search') }}" accept-charset="UTF-8">
                             <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                             <div class="col-lg-6 margin-bottom">
@@ -64,10 +64,10 @@
                                         <div class="col-md-4">
                                             <div class="btn-group" data-toggle="buttons">
                                                 <label class="btn btn-primary">
-                                                    <input type="radio" name="afspraak" value="Inmeten"> Inmeten
+                                                    <input type="radio" name="afspraak" value="meten"> Inmeten
                                                 </label>
                                                 <label class="btn btn-primary">
-                                                    <input type="radio" name="afspraak" value="Zetten"> Zetten
+                                                    <input type="radio" name="afspraak" value="zetten"> Zetten
                                                 </label>
                                             </div>
                                         </div>

@@ -18,6 +18,5 @@ Met vriendelijke groet,<br>
 <br>
 De planning<br>
 <br>
-<img src="http://dqglas.nl/wp-content/uploads/2015/04/Screen-Shot-2015-04-02-at-11.09.52.png" alt="Logo" style="width:200px;height:100px;">
-
+<img src="{{url("images/logo.jpg")}}" alt="Logo" style="width:300px;height:250px;">
 

@@ -52,10 +52,10 @@
                             <div class="col-md-4">
                                 <div class="btn-group" data-toggle="buttons">
                                     <label class="btn btn-primary">
-                                        <input type="radio" name="afspraak" value="Inmeten"> Inmeten
+                                        <input type="radio" name="afspraak" value="meten"> Inmeten
                                     </label>
                                     <label class="btn btn-primary">
-                                        <input type="radio" name="afspraak" value="Zetten"> Zetten
+                                        <input type="radio" name="afspraak" value="zetten"> Zetten
                                     </label>
                                 </div>
                             </div>

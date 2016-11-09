@@ -31,6 +31,7 @@ Route::get('adres/brief', 'AdresController@maakBrief');
 
 
 Route::post('adres/search', 'AdresController@search');
+Route::get('adres/test', 'AdresController@test');
 
 Route::post('mail', 'AdresController@mail');
 Route::post('brief', 'AdresController@brief');
