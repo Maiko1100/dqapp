@@ -31,7 +31,7 @@
                     <div class="panel-body">
 
 
-                        <form method="POST" action="http://localhost:8000/adres/search" accept-charset="UTF-8">
+                        <form method="POST" action="{{ url('adres/search') }}" accept-charset="UTF-8">
                             <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                             <div class="col-lg-6 margin-bottom">
                                 <div class="input-group">
