@@ -7,9 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Validator;
 use Redirect;
 use \PDF;
-use Illuminate\Support\Facades\Storage;
 use Session;
-use FPDF;
 use Illuminate\Support\Facades\Mail;
 
 class AdresController extends Controller
@@ -162,11 +160,6 @@ class AdresController extends Controller
     public function maakBrief()
     {
         return view('adres/brief');
-    }
-
-    public function upload()
-    {
-        return view('adres/upload');
     }
 
     public function checkTijd($tijd)

@@ -18,11 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 
+Route::get('/', 'AdresController@index');
 Route::get('/home', 'AdresController@index');
 
-
-
-//Route::get('upload', 'UploadController@index');
 Route::get('upload/cleardb','UploadController@clearDb');
 
 Route::resource('upload', 'UploadController');
