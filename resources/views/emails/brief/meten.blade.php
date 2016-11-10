@@ -12,7 +12,7 @@
 <br>
 Via deze email willen wij u laten weten dat wij het glas en/of roosters komen opmeten op:<br>
 <br>
-{{--<b>{{ $datum }} {{ $tijd }}</b><br>--}}
+<b>{{ $datum }} {{ $tijd }}</b><br>
 <br>
 Mocht het zo zijn dat u niet thuis kunt zijn en/of blijven, dan vragen wij u<br>
 vriendelijk ons daarvan op de hoogte te brengen.<br>
