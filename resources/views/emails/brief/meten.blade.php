@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{url("resources/assets/css/email/email.css")}}">
+<link rel="stylesheet" href="{{asset("/css/email/email.css")}}">
 
 <div class="test">Geachte bewoners(s),<br></div>
 <br>
