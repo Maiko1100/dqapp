@@ -175,7 +175,7 @@ class AdresController extends Controller
     }
     public function test()
     {
-        return view('pdf/zetten');
+        return view('emails/brief/meten');
     }
 
     public function checkAfspraak($afspraak)
