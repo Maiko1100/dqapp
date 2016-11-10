@@ -1,22 +1,18 @@
-<style>
-    @font-face {
-        font-family: square721;
-        src: url("../font/FontHeader.tff");
-    }
-</style>
 
-<div style="width: 100%; margin-top: 30px;">
-    <div style="width: 80%; margin: 0 auto;">
-        <div style="display: inline-block; float: left; background-image: url(http://dqglas.nl/wp-content/uploads/2016/11/dqlogo.png); background-size: 290px; background-repeat: no-repeat; height: 150px; width: 290px;"></div>
-        <div style="display: inline-block; float: right; color: #DF4D52; font-size: 20px; line-height: 40px; font-family: square721;">
+<div style="height: 24vh; width: 80vw; margin-top: 5vh;">
+    <div style="height: 24vh;width: 60vw;margin: 2vw;">
+        <div style="display: inline-block; float: left; background-image: url(http://dqglas.nl/wp-content/uploads/2016/11/dqlogo.png); background-size: 19vw; background-repeat: no-repeat; height: 21vh; width: 19vw;"></div>
+        <div style="display: inline-block; float: right; margin-top: 4vh; color: #DF4D52; width: 35vw; font-size: 3vh; line-height: 6vh; ">
             <b>Het glasservice bedrijf in de regio Amsterdam &amp; Diemen</b> <br> 24 uur per dag bereikbaar via 020 66 50 205</div>
     </div>
 </div>
+
+<div style="padding: 2vw">
 <div class="test">Geachte bewoners(s),<br></div>
 <br>
 Via deze email willen wij u laten weten dat wij het glas en/of roosters komen opmeten op:<br>
 <br>
-<b>{{ $datum }} {{ $tijd }}</b><br>
+{{--<b>{{ $datum }} {{ $tijd }}</b><br>--}}
 <br>
 Mocht het zo zijn dat u niet thuis kunt zijn en/of blijven, dan vragen wij u<br>
 vriendelijk ons daarvan op de hoogte te brengen.<br>
@@ -32,4 +28,4 @@ Met vriendelijke groet,<br>
 <br>
 De planning<br>
 <br>
-
+    </div>

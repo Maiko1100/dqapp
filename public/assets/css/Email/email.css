@@ -1,6 +1,6 @@
 @font-face {
     font-family: square721;
-    src: url("../font/FontHeader.tff");
+    src: url("../../../font/FontHeader.tff");
 }
 .test{
     color: red;
