@@ -50,7 +50,15 @@ class UploadController extends Controller
             }
             fclose($file);
         }
-        return view('upload/upload');
+        return view('upload/upload')->withError('Adressen toegevoegd');
+    }
+
+    public function clearDb(){
+
+        DB::table('adres')->truncate();
+
+        return view('upload/upload')->withError('Database leeggemaakt!');
+
     }
 }
 

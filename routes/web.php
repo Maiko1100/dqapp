@@ -23,6 +23,7 @@ Route::get('/home', 'HomeController@index');
 
 
 //Route::get('upload', 'UploadController@index');
+Route::get('upload/cleardb','UploadController@clearDb');
 
 Route::resource('upload', 'UploadController');
 

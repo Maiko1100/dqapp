@@ -10,7 +10,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Maak brief</div>
                     @if ( isset($error) )
-                        <div class="alert alert-danger fade in">
+                        <div class="alert alert-danger fade in alert-margin">
                             <a href="#" class="close" data-dismiss="alert">&times;</a>
                             <strong>{{$error}}</strong>
                         </div>
