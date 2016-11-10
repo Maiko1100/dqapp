@@ -1,4 +1,6 @@
-Geachte bewoners(s),<br>
+<link rel="stylesheet" href="{{url("resources/assets/css/email/email.css")}}">
+
+<div class="test">Geachte bewoners(s),<br></div>
 <br>
 Via deze email willen wij u laten weten dat wij het glas en/of roosters komen opmeten op:<br>
 <br>
