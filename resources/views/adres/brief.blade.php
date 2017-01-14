@@ -3,6 +3,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/adres/adres.css') }}">
 
     <div class="container">
         <div class="row">
@@ -78,7 +79,7 @@
                         <div style="margin-top: 5px; margin-bottom: 5px" class="row">
                             <div class="col-md-4">
                                 <input type="text" class="form-control" name="email"
-                                       placeholder="Emailadres(optioneel)">
+                                       placeholder="Emailadres (optioneel)">
                             </div>
                         </div>
 
@@ -103,33 +104,6 @@
                                 var soort = "createBrief";
                                 var error = $("#error_message");
 
-                                var datum = $('input[name=datum]').val();
-
-                                if (datum == null || datum == "") {
-                                    $('#alert').show();
-                                    error.text("Datum is niet ingevuld");
-                                    return false;
-                                } else {
-                                    $('#alert').hide();
-                                }
-                                var email = $('input[name=email]').val();
-
-                                var afspraak = $('input[name=afspraak]:checked').val();
-                                if (afspraak == null || afspraak == "") {
-                                    $('#alert').show();
-                                    error.text("Afspraak is niet ingevuld");
-                                    return false;
-                                } else {
-                                    $('#alert').hide();
-                                }
-                                var tijd = $('input[name=tijd]:checked').val();
-                                if (tijd == null || tijd == "") {
-                                    $('#alert').show();
-                                    error.text("Tijd is niet ingevuld");
-                                    return false;
-                                } else {
-                                    $('#alert').hide();
-                                }
                                 var naam = $('input[name=naam]').val();
                                 if (naam == null || naam == "") {
                                     $('#alert').show();
@@ -138,6 +112,7 @@
                                 } else {
                                     $('#alert').hide();
                                 }
+
                                 var straat = $('input[name=straat]').val();
                                 if (straat == null || straat == "") {
                                     $('#alert').show();
@@ -164,6 +139,35 @@
                                     $('#alert').hide();
                                 }
 
+                                var datum = $('input[name=datum]').val();
+
+                                if (datum == null || datum == "") {
+                                    $('#alert').show();
+                                    error.text("Datum is niet ingevuld");
+                                    return false;
+                                } else {
+                                    $('#alert').hide();
+                                }
+
+
+                                var afspraak = $('input[name=afspraak]:checked').val();
+                                if (afspraak == null || afspraak == "") {
+                                    $('#alert').show();
+                                    error.text("Afspraak is niet ingevuld");
+                                    return false;
+                                } else {
+                                    $('#alert').hide();
+                                }
+                                var tijd = $('input[name=tijd]:checked').val();
+                                if (tijd == null || tijd == "") {
+                                    $('#alert').show();
+                                    error.text("Tijd is niet ingevuld");
+                                    return false;
+                                } else {
+                                    $('#alert').hide();
+                                }
+
+                                var email = $('input[name=email]').val();
 
                                 var aData =
                                 {
@@ -194,33 +198,6 @@
                             $('body').on('click', '#mailBrief', function () {
                                 var error = $("#error_message");
 
-                                var datum = $('input[name=datum]').val();
-
-                                if (datum == null || datum == "") {
-                                    $('#alert').show();
-                                    error.text("Datum is niet ingevuld");
-                                    return false;
-                                } else {
-                                    $('#alert').hide();
-                                }
-                                var email = $('input[name=email]').val();
-
-                                var afspraak = $('input[name=afspraak]:checked').val();
-                                if (afspraak == null || afspraak == "") {
-                                    $('#alert').show();
-                                    error.text("Afspraak is niet ingevuld");
-                                    return false;
-                                } else {
-                                    $('#alert').hide();
-                                }
-                                var tijd = $('input[name=tijd]:checked').val();
-                                if (tijd == null || tijd == "") {
-                                    $('#alert').show();
-                                    error.text("Tijd is niet ingevuld");
-                                    return false;
-                                } else {
-                                    $('#alert').hide();
-                                }
                                 var naam = $('input[name=naam]').val();
                                 if (naam == null || naam == "") {
                                     $('#alert').show();
@@ -229,6 +206,7 @@
                                 } else {
                                     $('#alert').hide();
                                 }
+
                                 var straat = $('input[name=straat]').val();
                                 if (straat == null || straat == "") {
                                     $('#alert').show();
@@ -249,6 +227,44 @@
                                 if (woonplaats == null || woonplaats == "") {
                                     $('#alert').show();
                                     error.text("Woonplaats is niet ingevuld");
+                                    return false;
+                                } else {
+
+                                    $('#alert').hide();
+                                }
+
+                                var datum = $('input[name=datum]').val();
+
+                                if (datum == null || datum == "") {
+                                    $('#alert').show();
+                                    error.text("Datum is niet ingevuld");
+                                    return false;
+                                } else {
+                                    $('#alert').hide();
+                                }
+
+
+                                var afspraak = $('input[name=afspraak]:checked').val();
+                                if (afspraak == null || afspraak == "") {
+                                    $('#alert').show();
+                                    error.text("Afspraak is niet ingevuld");
+                                    return false;
+                                } else {
+                                    $('#alert').hide();
+                                }
+                                var tijd = $('input[name=tijd]:checked').val();
+                                if (tijd == null || tijd == "") {
+                                    $('#alert').show();
+                                    error.text("Tijd is niet ingevuld");
+                                    return false;
+                                } else {
+                                    $('#alert').hide();
+                                }
+
+                                var email = $('input[name=email]').val();
+                                if (!validateEmail(email)) {
+                                    $('#alert').show();
+                                    error.text("Email is niet correct ingevuld");
                                     return false;
                                 } else {
                                     $('#alert').hide();
@@ -289,11 +305,13 @@
                             return re.test(email);
 
                         }
+
                         $(function () {
                             $("#datepicker").datepicker({
                                         dateFormat: 'DD d MM yy',
                                         changeMonth: true,
                                         changeYear: true,
+                                        minDate: 0
                                     },
                                     $.datepicker.regional['nl']);
                         });
@@ -302,13 +320,13 @@
 
 
                 </div>
-                <style>
-                    #datepicker {
-                        position: relative;
-                        z-index: 100;
-                    }
+                {{--<style>--}}
+                    {{--#datepicker {--}}
+                        {{--position: relative;--}}
+                        {{--z-index: 100;--}}
+                    {{--}--}}
 
-                </style>
+                {{--</style>--}}
             </div>
         </div>
     </div>

@@ -88,7 +88,7 @@
                                     <div class="row margin-top margin-bottom">
                                         <div class="col-md-4">
                                             <input type="text" class="form-control" name="email"
-                                                   placeholder="Emailadres(optioneel)">
+                                                   placeholder="Emailadres (optioneel)">
                                         </div>
                                     </div>
                                 </div>

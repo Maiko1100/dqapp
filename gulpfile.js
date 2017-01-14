@@ -1,5 +1,5 @@
 const elixir = require('laravel-elixir');
-
+require('laravel-elixir-webpack-official')
 require('laravel-elixir-vue');
 
 /*
@@ -21,6 +21,8 @@ mix.styles([
     'Adres/Adres.css',
     'Adres/Datepicker.css',
 ], 'public/assets/css/adres/adres.css');
+
+
 mix.scripts([
     'Adres/MaakBrief.js',
     'Adres/MailBrief.js',
@@ -28,6 +30,14 @@ mix.scripts([
     'Adres/Datepicker.js',
     'ui.datepicker-nl.js'
 ], 'public/assets/js/adres/adres.js');
+
+mix.scripts([
+    'MaakBrief/maak.js',
+    'MaakBrief/mail_brief.js',
+    'Adres/validation.js',
+    'Adres/Datepicker.js',
+    'ui.datepicker-nl.js'
+], 'public/assets/js/brief/brief.js');
 });
 
 
