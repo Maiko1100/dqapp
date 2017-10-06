@@ -1,4 +1,4 @@
-<img src="./images/logo.jpg" alt="Logo" style="width:300px;height:250px;">
+<img src="./images/logo2.jpg" alt="Logo" style="width:300px;height:250px;">
 <div style="float: right; width: 350px; padding-top: 130px; " class="naw">
     {{ $naam }}<br>
     <br>
