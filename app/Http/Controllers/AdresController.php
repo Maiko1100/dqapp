@@ -165,7 +165,7 @@ class AdresController extends Controller
     public function checkTijd($tijd)
     {
         if ($tijd == 'Ochtend') {
-            $tijd = 'tussen 8.00 en 12.30 uur';
+            $tijd = 'tussen 8.30 en 12.30 uur';
         } elseif ($tijd == 'Tussen') {
             $tijd = 'tussen 10.30 en 14.30 uur';
         } else {

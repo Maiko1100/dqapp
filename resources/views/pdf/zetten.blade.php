@@ -1,5 +1,5 @@
 <img src="./images/logo.jpg" alt="Logo" style="width:300px;height:250px;">
-<div style="float: right; width: 350px; padding-top: 100px; " class="naw">
+<div style="float: right; width: 350px; padding-top: 130px; " class="naw">
     {{ $naam }}<br>
     <br>
     {{ $straat ." ".$huisnummer }}<br>
@@ -8,7 +8,7 @@
     <br>
 </div>
 <br>
-<div style="float: right; width: 250px; padding-top: 50px;  ">{{$stad_datum.", ". $huidige_datum }}</div>
+<div style="float: right; width: 250px; padding-top: 50px;  ">Amsterdam, {{ $huidige_datum }}</div>
 <div style="padding-left: 20px; padding-top: 90px">
 
     Geachte bewoners(s),<br>
