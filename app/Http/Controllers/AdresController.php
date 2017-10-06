@@ -76,7 +76,7 @@ class AdresController extends Controller
             $woonplaats = $request->input('woonplaats');
             $toevoeging = $request->input('toevoeging');
 
-            $logo = url('images/logo.jpg');
+            $logo = url('images/logo2.jpg');
 
             $aAdresData = array
             (
@@ -102,7 +102,7 @@ class AdresController extends Controller
         } else {
             $id = $request->input('id');
             $adres = DB::table('adres')->where('id', $id)->first();
-            $logo = asset('images/logo.jpg');
+            $logo = asset('images/logo2.jpg');
             $aAdresData = array
             (
                 'straat' => $adres->straat,
@@ -130,7 +130,7 @@ class AdresController extends Controller
 
     public function mail(Request $request)
     {
-        $logo = asset('images/logo.jpg');
+        $logo = asset('images/logo2.jpg');
         $datum = $request->input('datum');
         $afspraak = $request->input('afspraak');
         $tijd = $request->input('tijd');
