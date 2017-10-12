@@ -151,8 +151,8 @@ class AdresController extends Controller
 
 
         Mail::send($brief, $data, function ($message) use ($data) {
-            $message->to($data['email'], '')->subject('Afspraak');
-            $message->from('maiko@dqservicegroep.nl', 'DQGlasservice');
+            $message->to($data['email'], '')->subject('Do-not-reply:Afspraak');
+            $message->from('afspraak@dqglas.nl', 'DQGlasservice');
         });
         return 'test';
     }
