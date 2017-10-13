@@ -24,10 +24,10 @@
     <br>
     Indien de monteurs genoodzaakt zijn spullen te verzetten om zo hun werk uit te<br>
     kunnen voeren, dan zijn wij niet aansprakelijk voor eventuele schade die<br>
-    daarbij ontstaat. Voor spullen o.a. luxaflex / lamellen die niet weggehaald zijn nemen wij geen verantwoording en
+    daarbij ontstaat. Voor spullen o.a. luxaflex / lamellen / kasten / buro's en bedden die niet weggehaald zijn nemen wij geen verantwoording en
     gaan wij deze ook niet verwijderen.<br>
     <br>
-    Schade aan luxaflex en lamellen die niet zijn weggehaald of aan muren waar ten gevolgen van de werkzaamheden zijn
+    Schade aan luxaflex / lamellen / kasten / buro's en bedden die niet zijn weggehaald of aan muren waar ten gevolgen van de werkzaamheden zijn
     voor eigen rekening.<br>
     Tenzij ons verwijtbaar gedrag kan worden aangerekend.<br>
     <br>
