@@ -27,4 +27,4 @@ Met vriendelijke groet,<br>
 <br>
 De planning<br>
 <br>
-    </div>
+</div>

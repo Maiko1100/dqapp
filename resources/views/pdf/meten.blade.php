@@ -2,7 +2,7 @@
 <div style="float: right; width: 350px; padding-top: 130px; " class="naw">
     {{ $naam }}<br>
     <br>
-    {{ $straat ." ".$huisnummer }}<br>
+    {{ $straat ." ".$huisnummer." ".$toevoeging  }}<br>
     <br>
     {{ $postcode ." ". $stad }}<br>
     <br>
